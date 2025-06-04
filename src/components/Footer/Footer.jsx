@@ -28,14 +28,14 @@ const Footer = () => {
                         <h3 className="font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2 text-gray-600">
                             <li className="flex items-center gap-2">
-                                <FaPhoneAlt className="text-indigo-500" /> 602-774-4735
+                                <FaPhoneAlt className="text-indigo-500" />+917863991096/ +919382861855 
                             </li>
                             <li className="flex items-start gap-2">
                                 <FaMapMarkerAlt className="text-indigo-500 mt-1" />
-                                <span>11022 South 51st Street Suite 105<br />Phoenix, AZ 85044</span>
+                                <span>D. K. Industrial Estate II, Chhatral Gandhinagar, Gujarat - 382729</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <FaEnvelope className="text-indigo-500" /> hello@unifiedui.com
+                                <FaEnvelope className="text-indigo-500" />info@sovisy.com
                             </li>
                         </ul>
                     </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                 {/* Bottom Links */}
                 <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-200 pt-6">
                     <p>
-                        ©Copyright Simtrak Solutions All rights reserved. 2024
+                        &copy; 2024 - Sovisy, Developed by Simtrak solutions
                     </p>
                     <div className="mt-2 space-x-4">
                         <a href="#" className="hover:underline">Privacy & Policy</a>
