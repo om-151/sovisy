@@ -6,7 +6,7 @@ const RelationshipSection = () => {
         <section className="w-full flex justify-center items-center bg-white">
             <div className="w-full max-w-6xl grid md:grid-cols-2 grid-cols-1">
                 {/* LEFT SIDE */}
-                <div className="bg-[#FF2949] text-white p-8 flex flex-col justify-center">
+                <div className="bg-[#8dd6f3] text-black p-8 flex flex-col justify-center">
                     <h4 className="text-sm font-semibold uppercase">We Develop</h4>
                     <h2 className="text-4xl font-bold mt-2 mb-4">RELATIONSHIPS</h2>
                     <p className="mb-6 text-base">
@@ -14,21 +14,21 @@ const RelationshipSection = () => {
                         At Sovisy, building relationships is at the heart of everything we do.
                     </p>
 
-                    <ul className="space-y-4 text-white text-base">
+                    <ul className="space-y-4 text-black text-base">
                         <li className="flex items-start gap-2">
-                            <FiCheckCircle className="mt-1 text-white text-xl" />
+                            <FiCheckCircle className="mt-1 text-black text-xl" />
                             <span>
                                 <strong>Customer-centric approach:</strong> Putting our clients first in every aspect of our operations.
                             </span>
                         </li>
                         <li className="flex items-start gap-2">
-                            <FiCheckCircle className="mt-1 text-white text-xl" />
+                            <FiCheckCircle className="mt-1 text-black text-xl" />
                             <span>
                                 <strong>Transparent communication:</strong> Ensuring clarity and openness in all interactions.
                             </span>
                         </li>
                         <li className="flex items-start gap-2">
-                            <FiCheckCircle className="mt-1 text-white text-xl" />
+                            <FiCheckCircle className="mt-1 text-black text-xl" />
                             <span>
                                 <strong>Consistent support:</strong> Providing reliable assistance and guidance throughout our journey together.
                             </span>

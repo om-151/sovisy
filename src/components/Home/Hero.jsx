@@ -127,7 +127,7 @@ export default function HomeSection() {
                     {/* Text Content */}
                     <div className="absolute inset-0 z-20 flex flex-col justify-center items-start pl-20 text-black">
                         <p className="text-sm mb-2 text-white">Welcome to the world of water storage solutions</p>
-                        <h1 className="text-5xl font-bold leading-tight text-white">
+                        <h1 className="sm:text-5xl text-2xl font-bold leading-tight text-white">
                             World's best <br />
                             <span className="text-red-500">SMC Panel Tank</span>
                         </h1>

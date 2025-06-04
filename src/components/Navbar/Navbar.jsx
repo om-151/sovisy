@@ -3,9 +3,11 @@ import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaInstagram } from "react-icon
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa6";
 import Logo from "../../assets/Main_Logo.webp"
+import { FaArrowUp } from "react-icons/fa";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [showBackToTop, setShowBackToTop] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState({
         sectors: false,
@@ -14,11 +16,19 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
+            const scrollY = window.scrollY;
+            setIsScrolled(scrollY > 50);
+            setShowBackToTop(scrollY > 200); // Show button after scrolling 200px
         };
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
 
     const toggleDropdown = (key) => {
         setDropdownOpen((prev) => ({
@@ -132,7 +142,7 @@ const Navbar = () => {
                                 Sectors <FaChevronDown className="text-xs" />
                             </button>
                             {dropdownOpen.sectors && (
-                                <ul className="ml-4 mt-2 space-y-1">
+                                <ul className="ml-4 mt-2 space-y-3">
                                     <li><a href="#" className="block hover:text-blue-600">Industrial</a></li>
                                     <li><a href="#" className="block hover:text-blue-600">Agriculture</a></li>
                                     <li><a href="#" className="block hover:text-blue-600">Construction</a></li>
@@ -151,7 +161,7 @@ const Navbar = () => {
                                 Projects <FaChevronDown className="text-xs" />
                             </button>
                             {dropdownOpen.projects && (
-                                <ul className="ml-4 mt-2 space-y-1">
+                                <ul className="ml-4 mt-2 space-y-3">
                                     <li><a href="#" className="block hover:text-blue-600">Completed</a></li>
                                     <li><a href="#" className="block hover:text-blue-600">Ongoing</a></li>
                                     <li><a href="#" className="block hover:text-blue-600">Upcoming</a></li>
@@ -168,6 +178,14 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
+            )}
+            {showBackToTop && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-6 right-6 z-50 bg-black text-white p-3 rounded-md shadow-lg hover:bg-gray-800 transition-all duration-300 cursor-pointer"
+                >
+                    <FaArrowUp />
+                </button>
             )}
         </header>
     );
