@@ -90,7 +90,7 @@ const Footer = () => {
                 {/* Bottom Links */}
                 <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-200 pt-6">
                     <p>
-                        ©Copyright <a href="https://unifiedui.com" className="text-indigo-600 hover:underline">UnifiedUI.com</a> All rights reserved. 2024
+                        ©Copyright Simtrak Solutions All rights reserved. 2024
                     </p>
                     <div className="mt-2 space-x-4">
                         <a href="#" className="hover:underline">Privacy & Policy</a>
