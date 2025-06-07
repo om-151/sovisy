@@ -1,6 +1,6 @@
 import React from 'react';
-import plumberImg from '../../assets/Water_plan.jpg'; // replace with actual image path
-import experienceImg from '../../assets/Main_Logo.webp'; // replace with actual image path
+import plumberImg from '../../../assets/Water_plan.jpg'; // replace with actual image path
+import experienceImg from '../../../assets/Main_Logo.webp'; // replace with actual image path
 
 const PlumbingServices = () => {
     return (

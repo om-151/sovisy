@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa6";
-import Logo from "../../assets/Main_Logo.webp"
+import Logo from "../../../assets/Main_Logo.webp"
 import { FaArrowUp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -45,10 +46,10 @@ const Navbar = () => {
             {/* Top Bar */}
             <div className="hidden md:flex justify-between items-center px-4 py-2 text-sm bg-gray-900 text-white">
                 <div className="flex items-center space-x-4">
-                    <a href="#"><FaFacebookF /></a>
-                    <a href="#"><FaLinkedinIn /></a>
-                    <a href="#"><FaPinterestP /></a>
-                    <a href="#"><FaInstagram /></a>
+                    <Link to="/about"><FaFacebookF /></Link>
+                    <Link to="/"><FaLinkedinIn /></Link>
+                    <Link to="/"><FaPinterestP /></Link>
+                    <Link to="/"><FaInstagram /></Link>
                 </div>
                 <div className="flex items-center space-x-6">
                     <span className="flex items-center"><MdEmail className="mr-1" /> info@example.com</span>
@@ -66,8 +67,8 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-6 text-gray-800 font-medium relative">
-                    <li><a href="#" className="hover:text-blue-600">Home</a></li>
-                    <li><a href="#" className="hover:text-blue-600">About us</a></li>
+                    <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
+                    <li><Link to="/" className="hover:text-blue-600">About us</Link></li>
 
                     {/* Sectors Dropdown */}
                     <li
@@ -77,13 +78,25 @@ const Navbar = () => {
                             Market Sectors <FaChevronDown className="text-xs" />
                         </button>
                         <ul className="absolute left-0 top-full mt-2 w-48 bg-white shadow-md border border-gray-200 hidden group-hover:block z-50">
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Industrial</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Agriculture</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Construction</a></li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Industrial
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Agriculture
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Construction
+                                </Link>
+                            </li>
                         </ul>
                     </li>
 
-                    <li><a href="#" className="hover:text-blue-600">Applications</a></li>
+                    <li><Link to="/" className="hover:text-blue-600">Applications</Link></li>
 
                     {/* Projects Dropdown */}
                     <li className="relative group">
@@ -91,14 +104,34 @@ const Navbar = () => {
                             Projects <FaChevronDown className="text-xs" />
                         </button>
                         <ul className="absolute left-0 top-full mt-2 w-48 bg-white shadow-md border border-gray-200 hidden group-hover:block z-50">
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Completed</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Ongoing</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Upcoming</a></li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Completed
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Ongoing
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
+                                    Upcoming
+                                </Link>
+                            </li>
                         </ul>
                     </li>
 
-                    <li><a href="#" className="hover:text-blue-600">Resources</a></li>
-                    <li><a href="#" className="hover:text-blue-600">Contact</a></li>
+                    <li>
+                        <Link to="/" className="hover:text-blue-600">
+                            Resources
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/" className="hover:text-blue-600">
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
 
                 {/* CTA */}
@@ -130,8 +163,16 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white px-4 pb-4 shadow-md">
                     <ul className="space-y-3 text-gray-800 font-medium">
-                        <li><a href="#" className="block hover:text-blue-600">Home</a></li>
-                        <li><a href="#" className="block hover:text-blue-600">About</a></li>
+                        <li>
+                            <Link to="/" className="block hover:text-blue-600">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="block hover:text-blue-600">
+                                About
+                            </Link>
+                        </li>
 
                         {/* Sectors Toggle */}
                         <li>
@@ -143,14 +184,26 @@ const Navbar = () => {
                             </button>
                             {dropdownOpen.sectors && (
                                 <ul className="ml-4 mt-2 space-y-3">
-                                    <li><a href="#" className="block hover:text-blue-600">Industrial</a></li>
-                                    <li><a href="#" className="block hover:text-blue-600">Agriculture</a></li>
-                                    <li><a href="#" className="block hover:text-blue-600">Construction</a></li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Industrial
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Agriculture
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Construction
+                                        </Link>
+                                    </li>
                                 </ul>
                             )}
                         </li>
 
-                        <li><a href="#" className="block hover:text-blue-600">Applications</a></li>
+                        <li><Link to="/" className="block hover:text-blue-600">Applications</Link></li>
 
                         {/* Projects Toggle */}
                         <li>
@@ -162,15 +215,35 @@ const Navbar = () => {
                             </button>
                             {dropdownOpen.projects && (
                                 <ul className="ml-4 mt-2 space-y-3">
-                                    <li><a href="#" className="block hover:text-blue-600">Completed</a></li>
-                                    <li><a href="#" className="block hover:text-blue-600">Ongoing</a></li>
-                                    <li><a href="#" className="block hover:text-blue-600">Upcoming</a></li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Completed
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Ongoing
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" className="block hover:text-blue-600">
+                                            Upcoming
+                                        </Link>
+                                    </li>
                                 </ul>
                             )}
                         </li>
 
-                        <li><a href="#" className="hover:text-blue-600">Resources</a></li>
-                        <li><a href="#" className="block hover:text-blue-600">Contact</a></li>
+                        <li>
+                            <Link to="/" className="hover:text-blue-600">
+                                Resources
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="block hover:text-blue-600">
+                                Contact
+                            </Link>
+                        </li>
                         <li>
                             <button className="w-full bg-white/70 text-black py-2 rounded-full hover:bg-gray-100 transition border-2 border-black cursor-pointer">
                                 Get a Free Quote
