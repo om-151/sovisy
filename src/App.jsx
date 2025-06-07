@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Home/Navbar/Navbar'
 import HeroMain from './components/Home/Main'
 import Footer from './components/Home/Footer/Footer'
+import HistoryMain from './components/History/History';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HeroMain />} />
+            <Route path="/history" element={<HistoryMain />} />
           </Routes>
         </main>
         <Footer />
