@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import IntroSection from '../../ParentComponents/IntroSection/IntroSection'
+import SovisyHistorySection from "../AboutSovisy/AboutSovisy";
+import YTVideo from "../YoutubeVideo/Video";
 
 const HistorySection = () => {
     return (
@@ -12,6 +13,8 @@ const HistorySection = () => {
                 path2="History"
                 title="History"
             />
+            <SovisyHistorySection />
+            <YTVideo />
         </>
     );
 };

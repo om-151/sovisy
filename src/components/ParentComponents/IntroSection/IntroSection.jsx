@@ -3,23 +3,27 @@ import { Link } from 'react-router-dom';
 
 const HistorySection = ({ imageUrl, path, path1, path2, title }) => {
     return (
-        <div className="relative w-full h-[90vh] bg-cover bg-center flex items-center justify-center text-white"
-            style={{
-                backgroundImage: `url('${imageUrl}')`,
-            }}
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#001d3d]/50 to-[#00509e]/20"></div>
+        <div className="relative w-full h-[35vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
+            <img
+                src={imageUrl}
+                alt={title}
+                className="absolute w-full h-full object-cover md:object-cover"
+            />
 
-            {/* Content */}
-            <div className="relative z-10 text-center">
-                {/* Breadcrumb */}
-                <p className="text-white text-sm md:text-base mb-2">
-                    <Link to="/" className="hover:underline">{path}</Link> <span className="mx-1">-</span> {path1} <span className="mx-1">-</span> <span className="text-blue-200">{path2}</span>
-                </p>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#001d3d]/30 to-[#00509e]/30"></div>
 
-                {/* Title */}
-                <h1 className="text-4xl md:text-5xl font-bold">{title}</h1>
+            <div className="relative z-10 text-center px-4 w-full max-w-screen-md">
+                <div className="text-white text-sm sm:text-base flex flex-wrap justify-center gap-1 sm:gap-2 mb-2">
+                    <Link to="/" className="hover:underline">{path}</Link>
+                    <span>-</span>
+                    <span>{path1}</span>
+                    <span>-</span>
+                    <span className="text-blue-200">{path2}</span>
+                </div>
+
+                <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">
+                    {title}
+                </h1>
             </div>
         </div>
     );
