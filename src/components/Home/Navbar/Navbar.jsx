@@ -77,7 +77,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
+                                <Link to="/smc-panel-tank" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
                                     SMC Panel Task Design
                                 </Link>
                             </li>
@@ -189,7 +189,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/" className="block px-1 py-1">
+                                        <Link to="/smc-panel-tank" className="block px-1 py-1">
                                             SMC Panel Task Design
                                         </Link>
                                     </li>
