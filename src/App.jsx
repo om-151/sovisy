@@ -5,6 +5,7 @@ import HeroMain from './components/Home/Main'
 import Footer from './components/Home/Footer/Footer'
 import HistoryMain from './components/History/History';
 import PanelTank from './components/SMCPanelTask/PanelTank';
+import TechnicalSpecifications from './components/Technical/TechnicalSpecifications';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<HeroMain />} />
             <Route path="/history" element={<HistoryMain />} />
             <Route path="/smc-panel-tank" element={<PanelTank />} />
+            <Route path="/technical-specifications" element={<TechnicalSpecifications />} />
           </Routes>
         </main>
         <Footer />
