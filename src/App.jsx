@@ -6,6 +6,7 @@ import Footer from './components/Home/Footer/Footer'
 import HistoryMain from './components/History/History';
 import PanelTank from './components/SMCPanelTask/PanelTank';
 import TechnicalSpecifications from './components/Technical/TechnicalSpecifications';
+import WorldwidePresence from './components/Worldwide/WorldwidePresence';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/history" element={<HistoryMain />} />
             <Route path="/smc-panel-tank" element={<PanelTank />} />
             <Route path="/technical-specifications" element={<TechnicalSpecifications />} />
+            <Route path="/worldwide-presence" element={<WorldwidePresence />} />
           </Routes>
         </main>
         <Footer />
