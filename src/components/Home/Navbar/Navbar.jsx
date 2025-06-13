@@ -97,6 +97,11 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/sales-partners" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
+                                    Sales Partners
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="/" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
                                     Valuable Clients
                                 </Link>
@@ -206,6 +211,11 @@ const Navbar = () => {
                                     <li>
                                         <Link to="/team" className="block px-1 py-1">
                                             Sovisy India Team
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/sales-partners" className="block px-1 py-1">
+                                            Sales Partners
                                         </Link>
                                     </li>
                                     <li>

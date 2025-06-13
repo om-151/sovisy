@@ -8,6 +8,8 @@ import PanelTank from './components/SMCPanelTask/PanelTank';
 import TechnicalSpecifications from './components/Technical/TechnicalSpecifications';
 import WorldwidePresence from './components/Worldwide/WorldwidePresence';
 import Team from './components/Team/Team';
+import SalesPartners from './components/SalesPartners/SalesPartners';
+import Error from './components/Error(404)/Error';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/technical-specifications" element={<TechnicalSpecifications />} />
             <Route path="/worldwide-presence" element={<WorldwidePresence />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/sales-partners" element={<SalesPartners />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </main>
         <Footer />
