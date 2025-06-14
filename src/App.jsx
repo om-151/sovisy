@@ -10,6 +10,7 @@ import WorldwidePresence from './components/Worldwide/WorldwidePresence';
 import Team from './components/Team/Team';
 import SalesPartners from './components/SalesPartners/SalesPartners';
 import Error from './components/Error(404)/Error';
+import ValuableClients from './components/ValuableClients/ValuableClients';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/worldwide-presence" element={<WorldwidePresence />} />
             <Route path="/team" element={<Team />} />
             <Route path="/sales-partners" element={<SalesPartners />} />
+            <Route path="/valuable-clients" element={<ValuableClients />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>

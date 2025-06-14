@@ -102,7 +102,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
+                                <Link to="/valuable-clients" className="block px-4 py-2 hover:bg-gray-100 hover:text-black">
                                     Valuable Clients
                                 </Link>
                             </li>
@@ -219,7 +219,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/" className="block px-1 py-1">
+                                        <Link to="/valuable-clients" className="block px-1 py-1">
                                             Valuable Clients
                                         </Link>
                                     </li>
