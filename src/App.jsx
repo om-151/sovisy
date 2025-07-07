@@ -11,6 +11,7 @@ import Team from './components/Team/Team';
 import SalesPartners from './components/SalesPartners/SalesPartners';
 import Error from './components/Error(404)/Error';
 import ValuableClients from './components/ValuableClients/ValuableClients';
+import MarketSectors from './components/MarketSectors/Hero/Hero';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/sales-partners" element={<SalesPartners />} />
             <Route path="/valuable-clients" element={<ValuableClients />} />
+            <Route path="/market-sectors" element={<MarketSectors />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>

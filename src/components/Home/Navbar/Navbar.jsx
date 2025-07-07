@@ -108,7 +108,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li><Link to="/" className="hover:text-black">Market Sectors</Link></li>
+                    <li><Link to="/market-sectors" className="hover:text-black">Market Sectors</Link></li>
                     <li><Link to="/" className="hover:text-black">Applications</Link></li>
                     <li><Link to="/" className="hover:text-black">Comparison</Link></li>
                     <li className="relative group">
@@ -227,7 +227,7 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <Link to="/" className="block hover:text-black">
+                            <Link to="/market-sectors" className="block hover:text-black">
                                 Market Sectors
                             </Link>
                         </li>
