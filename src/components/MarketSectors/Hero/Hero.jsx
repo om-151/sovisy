@@ -1,6 +1,7 @@
 import React from 'react'
 import IntroSection from '../../ParentComponents/IntroSection/IntroSection'
 import SMCPanelWaterTanks from '../IntroSection/Intro'
+import Municipalsectors from '../Municipal/MunicipalSectors'
 
 const MarketSectors = () => {
     return (
@@ -13,6 +14,7 @@ const MarketSectors = () => {
                 title="Market Sectors"
             />
             <SMCPanelWaterTanks />
+            <Municipalsectors />
         </>
     )
 }

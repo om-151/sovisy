@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const SMCPanelWaterTanks = () => {
     const [showMore, setShowMore] = useState(false);
-
+    
     return (
         <section className="bg-white py-12 px-6 md:px-20">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -54,7 +54,7 @@ const SMCPanelWaterTanks = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="w-lg h-full">
+                <div className="md:w-lg h-full">
                     <div className="overflow-hidden rounded-xl shadow-lg group">
                         <img
                             src="https://sovisy.com/wp-content/uploads/2024/03/Market-sector-image1.webp"
